@@ -7,6 +7,8 @@ import { LeftNavigationComponent } from './left-navigation/left-navigation.compo
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { HeaderComponent } from './header/header.component';
 import { BranchesComponent } from './branches/branches.component';
+import { EnvironmentComponent } from './dashboard/environment/environment.component';
+import { ApplicationComponent } from './dashboard/application/application.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +17,9 @@ import { BranchesComponent } from './branches/branches.component';
     LeftNavigationComponent,
     DashboardComponent,
     HeaderComponent,
-    BranchesComponent
+    BranchesComponent,
+    EnvironmentComponent,
+    ApplicationComponent
   ],
   imports: [
     BrowserModule
