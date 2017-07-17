@@ -1,0 +1,110 @@
+<div id="pageContentWrapper">
+	<app-header></app-header>
+
+	<div class="row">
+		<div class="col-md-6">
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<i class="fa fa-server"></i> Environment
+					<div class="pull-right">
+						<a href="#">Manage</a>
+					</div>
+				</div>
+				<div class="panel-body">
+					<table class="table table-hover">
+						<thead>
+							<tr>
+								<th>#</th>
+								<th>Name</th>
+								<th>Description</th>
+								<th>Installed On</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr *ngFor="let environment of environments">
+								<td>{{environment.id}}</td>
+								<td>{{environment.name}}</td>
+								<td>{{environment.description}}</td>
+								<td>{{environment.installedOn}}</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-6">
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<i class="fa fa-users"></i> Application
+					<div class="pull-right">
+						<input type="text" class="searchBox" id="txtSearch" placeholder="Search" />
+					</div>
+				</div>
+				<div class="panel-body">
+					<table class="table table-hover">
+						<thead>
+							<tr>
+								<th>ID</th>
+								<th>Application Name</th>
+								<th>Release/ App Version</th>
+								<th>Installed On</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<th scope="row">1</th>
+								<td>Sales Backend</td>
+								<td>4.4.1/41.6.1</td>
+								<td>7.7.2017</td>
+							</tr>
+							<tr>
+								<th scope="row">2</th>
+								<td>Service Point</td>
+								<td>4.4.1/40.2.4</td>
+								<td>7.7.2017</td>
+							</tr>
+							<tr>
+								<th scope="row">3</th>
+								<td>CRM</td>
+								<td>4.4.1/41.0.1</td>
+								<td>7.7.2017</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--<div class="row">
+		<div class="col-md-6">
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<i class="fa fa-plus"></i> Extras
+					<div class="pull-right">
+						<input type="button" class="btn btn-info" value="Button" style="margin-top:-4px;" />
+					</div>
+				</div>
+				<div class="panel-body">
+					<p>Some additional sticky text can go here. Can also <span class="color-red">be an error message!</span></p>
+
+				</div>
+			</div>
+		</div>
+		<div class="col-md-6">
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<i class="fa fa-cog"></i> Loading Directive
+					<div class="pull-right">
+						<a href="#">SpinKit</a>
+					</div>
+				</div>
+				<div class="panel-body">
+					<div class="spinner">
+						<div class="ball"></div>
+						<p>LOADING</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>-->
+</div>

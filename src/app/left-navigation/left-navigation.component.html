@@ -1,0 +1,16 @@
+<div id="sidebar-wrapper">
+    <ul id="sidebar_menu" class="sidebar-nav">
+           <li class="sidebar-brand"><a rel="nofollow" rel="noreferrer" id="menu-toggle" href="#" (click)="onToggleNavigation()">Dashboard <span id="main_icon" class="glyphicon glyphicon-transfer"></span></a></li>
+    </ul>
+    <ul class="sidebar-nav" id="sidebar">     
+			  <li class="nav-hide">NAVIGATION</li>
+			  <li><a (click)="onSelectLeftNavigation('dashboard')">Dashboard<span class="sub_icon fa fa-tachometer"></span></a></li>
+			  <li><a (click)="onSelectLeftNavigation('branches')">Branches<span class="sub_icon fa fa-share-alt"></span></a></li>
+			  <li><a (click)="onSelectLeftNavigation('tables')">Tables<span class="sub_icon fa fa-table"></span></a></li>
+    </ul>
+		<ul class="bottom_menu"  *ngIf="!showNavigation">
+			<li><a href="#">LIJ</a></li>
+			<li><a href="#">About Us</a></li>
+			<li><a href="#">Support</a></li>
+		</ul>
+</div>
