@@ -16,7 +16,13 @@ environments: Environment[] = [
     new Environment(5, "TS3&IS3 SIT ENV4/test4", "SIT HSL", "1.15.15 / 22.06.2017 Santosh"),
   ];
 
-  constructor() { }
+  constructor() { 
+
+  }
+
+  setClickedRow(i){
+    console.log(i);
+  }
 
   ngOnInit() {
   }

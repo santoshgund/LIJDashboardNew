@@ -17,7 +17,7 @@
 							</tr>
 						</thead>
 						<tbody>
-							<tr *ngFor="let environment of environments">
+							<tr *ngFor="let environment of environments;let i = index" (click)="setClickedRow(environment)">
 								<td>{{environment.id}}</td>
 								<td>{{environment.name}}</td>
 								<td>{{environment.description}}</td>
