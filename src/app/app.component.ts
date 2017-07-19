@@ -10,7 +10,7 @@ export class AppComponent {
     isNavBarExpanded=true;
     loadedFeature='dashboard';
 
-  //Subscribe event to get the Toggle Class values
+  //Subscribe event to get the Toggle Class values --check -in for test
   toggleNavBarClass(event:boolean){
      this.isNavBarExpanded=event;
   }
