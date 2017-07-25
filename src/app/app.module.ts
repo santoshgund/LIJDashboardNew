@@ -9,6 +9,7 @@ import { HeaderComponent } from './header/header.component';
 import { BranchesComponent } from './branches/branches.component';
 import { EnvironmentComponent } from './dashboard/environment/environment.component';
 import { ApplicationComponent } from './dashboard/application/application.component';
+import { ToggleDirective } from './shared/toggle.directive';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { ApplicationComponent } from './dashboard/application/application.compon
     HeaderComponent,
     BranchesComponent,
     EnvironmentComponent,
-    ApplicationComponent
+    ApplicationComponent,
+    ToggleDirective
   ],
   imports: [
     BrowserModule

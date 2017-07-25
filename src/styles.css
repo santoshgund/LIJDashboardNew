@@ -259,7 +259,7 @@ ul.breadcrumb li a:hover {
 .pull-right ul li a{ 
 	padding:7px 12px;
 	display:inline-block;
-	color: #333;
+	color: #fdf4f4;
 	transition: background-color .3s;
 }
 .pull-right ul li a:hover{
@@ -329,6 +329,15 @@ ul.breadcrumb li a:hover {
     top: 0px;
     left: 15px;
 }
+ .color-green:after {
+    position: absolute;
+    content: "";
+    background: #1BAA83;
+    width: 2px;
+    height: 65px;
+    top: 0px;
+    right: 15px;
+}
 .color-dark-red {
 	background:#AE241D;
  }
@@ -340,6 +349,15 @@ ul.breadcrumb li a:hover {
     height: 65px;
     top: 0px;
     left: 15px;
+}
+.color-dark-red:after {
+    position: absolute;
+    content: "";
+    background: #AE241D;
+    width: 2px;
+    height: 65px;
+    top: 0px;
+    right: 15px;
 }
 .color-yellow {
 	background:#D3A939;
@@ -353,6 +371,15 @@ ul.breadcrumb li a:hover {
     top: 0px;
     left: 15px;
 }
+.color-yellow:after {
+    position: absolute;
+    content: "";
+    background: #D3A939;
+    width: 2px;
+    height: 65px;
+    top: 0px;
+    right: 15px;
+}
 .color-blue {
 	background:#265FAA;
  }
@@ -364,6 +391,15 @@ ul.breadcrumb li a:hover {
     height: 65px;
     top: 0px;
     left: 15px;
+}
+.color-blue:after {
+    position: absolute;
+    content: "";
+    background: #265FAA;
+    width: 2px;
+    height: 65px;
+    top: 0px;
+    right: 15px;
 }
  .color-red {
 	color:#ff0000;

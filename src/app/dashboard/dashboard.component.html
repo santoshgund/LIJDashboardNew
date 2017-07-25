@@ -1,7 +1,69 @@
 <div id="pageContentWrapper">
 	<app-header></app-header>
 	<div class="row">
-		<app-environment></app-environment>
-		<app-application></app-application>
+		<div class="col-md-6">
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<i class="fa fa-server"></i> Environment
+					<div class="pull-right">
+						<a href="#">Manage</a>
+					</div>	
+				</div>
+				<div class="panel-body">
+					<table class="table table-hover">
+						<thead>
+							<tr>
+								<th>#</th>
+								<th>Name</th>
+								<th>Description</th>
+								<th>Installed On</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr *ngFor="let environment of environments;let i = index" (click)="setClickedRow(environment)">
+								<td>{{environment.id}}</td>
+								<td>{{environment.envName}}</td>
+								<td>{{environment.envDesc}}</td>
+								<td>{{environment.installedOn}}</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+<div class="col-md-6">
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<i class="fa fa-users"></i> Application
+					<div class="pull-right">
+						<input type="text" class="searchBox" id="txtSearch" placeholder="Search" />
+					</div>
+				</div>
+				<div class="panel-body">
+					<table class="table table-hover">
+						<thead>
+							<tr>
+								<th>#</th>
+								<th>Application Name</th>
+								<th>Application Version</th>
+								<th>Installed On</th>
+								<th>Environment Name</th>
+							</tr>
+						</thead>
+							<tbody>
+							<tr *ngFor="let application of applications">
+								<td>{{application.id}}</td>
+								<td>{{application.appName}}</td>
+								<td>{{application.appVersion}}</td>
+								<td>{{application.installedOn}}</td>
+								<td>{{application.environmentName}}</td>
+								
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+
 	</div>
 </div>
